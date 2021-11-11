@@ -77,7 +77,6 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     color: #FFFFFF;
-    font-size: 24px;
     box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.3);
     z-index: 1;
 }
@@ -92,12 +91,58 @@ main {
 /* Navigation */
 .navigation-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     width: 580px;
+}
+
+.navigation-item {
+    position: relative;
+}
+
+.logo {
+    padding: 10px 0;
+}
+
+.navigation-link {
+    padding: 10px 20px;
+}
+
+.dropdown {
+    margin-left: 5px;
+}
+
+.navigation-link:hover,
+.navigation-link:focus {
+    color: #FF9CFB;
+}
+
+.navigation-link:hover .dropdown,
+.navigation-link:focus .dropdown {
+    fill: #FF9CFB;
 }
 
 .navigation-sublist {
     display: none;
+    background-color: #7834A5;
+    width: max-content;
+    max-width: 300px;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.navigation-subitem .navigation-link {
+    width: 100%;
+}
+
+.navigation-link:hover + .navigation-sublist,
+.navigation-item:focus-within .navigation-sublist,
+.navigation-sublist:hover {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: -5px;
+    margin: auto;
 }
 
 /* Title block */
@@ -106,12 +151,26 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     color: #FFFFFF;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 .main-title {
     display: inline-block;
     font-weight: 700;
     font-size: 40px;
+}
+
+/* Footer */
+.main-footer {
+    background-image: url("../images/background/purple-gradient.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #FFFFFF;
+}
+
+.footer-container {
     margin-top: 30px;
     margin-bottom: 30px;
 }
