@@ -1,2 +1,2 @@
-# stichwort
+# stichwort.com
 Сайт для изучения немецкого языка
