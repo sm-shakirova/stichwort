@@ -11,12 +11,24 @@
     <div class="container header-container">
         <div class="logo">stichwort.com</div>
         <nav class="navigation">
+            <form class="search-form" action="#" method="get">
+                <label class="visually-hidden" for="search-field">Поиск по сайту</label>
+                <input class="search" id="search-field" type="search" name="page-search" placeholder="Поиск">
+                <svg class="search-icon" aria-label="Лупа" aria-hidden="true" focusable="false"
+                     width="25" height="25" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.745 2.5c-3.876 0-7.032 3.156-7.032 7.031 0 1.654.599
+                    3.162 1.563 4.364L2.5 21.671l1.099 1.111L11.38 15c1.202.964 2.71 1.563 4.364 1.563 3.875 0 7.03-3.156
+                    7.03-7.032 0-3.875-3.155-7.031-7.03-7.031Zm0 1.563a5.46 5.46 0 0 1 5.468 5.468A5.46 5.46 0 0 1 15.745
+                    15a5.46 5.46 0 0 1-5.47-5.469 5.46 5.46 0 0 1 5.47-5.469Z"/>
+                </svg>
+                <button class="search-button" type="submit">Найти</button>
+            </form>
             <ul class="list navigation-list">
                 <li class="navigation-item">
                     <a class="link navigation-link" href="../index.html">Homepage</a>
                 </li>
                 <li class="navigation-item">
-                    <a class="link navigation-link open-sublist" href="../theory/theory.html">
+                    <a class="link navigation-link open-sublist" href="../theory/theory_verbforms.html">
                         Lehre
                         <svg class="dropdown" aria-label="" aria-hidden="true" focusable="false"
                              width="11" height="6" fill="#fff" xmlns="http://www.w3.org/2000/svg">
@@ -55,8 +67,9 @@
                 </li>
                 <li class="navigation-item">
                     <a class="link navigation-link open-sublist" href="../culture/culture.html">
-                        <span class="">Культура</span>
-                        <svg class="dropdown" aria-label="" aria-hidden="true" focusable="false"
+                        <span class="visually-hidden">Культура</span>
+                        <span class="lamp"></span>
+                        <svg class="dropdown" aria-label="Стрелочка вниз" aria-hidden="true" focusable="false"
                              width="11" height="6" fill="#fff" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                   d="m6.09 5.78 4.69-4.47c.3-.3.3-.79 0-1.09-.3-.3-.8-.3-1.1 0L5.48 4.2
@@ -79,9 +92,114 @@
 <main>
     <header class="inner-header">
         <div class="container">
-            <h1 class="visually-hidden">Partizipien</h1>
+            <h1 class="main-title">Die Hauptformen des Verbs</h1>
+            <p class="title-description">Основные формы глагола</p>
         </div>
     </header>
+    <div class="container">
+        <ul class="theory-navigation-list">
+            <li class="theory-navigation-item">
+                <a class="theory-navigation-link" href="#section-1">Немецкий глагол имеет 3 основные формы</a>
+            </li>
+            <li class="theory-navigation-item">
+                <a class="theory-navigation-link" href="#section-2">Слабые глаголы</a>
+            </li>
+            <li class="theory-navigation-item">
+                <a class="theory-navigation-link" href="#section-3">Сильные глаголы</a>
+            </li>
+        </ul>
+        <section id="section-1">
+            <h2 class="visually-hidden">Основные формы глагола</h2>
+            <p class="theory-title">Немецкий глагол имеет 3 основные формы</p>
+            <ul class="theory-list">
+                <li class="theory-list-item">неопределенная форма (Infinitiv)</li>
+                <li class="theory-list-item">прошедшее время (Präteritum)</li>
+                <li class="theory-list-item">причастие прошедшего времени (Partizip 2)</li>
+            </ul>
+            <p class="theory-text">Функции основных форм глаголов:</p>
+            <ul class="theory-list">
+                <li class="theory-list-item">используются для образования различных времён</li>
+            </ul>
+            <p class="theory-text">
+                <em>Для изучающих немецкий язык чрезвычайно важно помнить наизусть основные формы глаголов!</em>
+            </p>
+            <p class="theory-text">По типу спряжения немецкие глаголы делятся на:</p>
+            <ul class="theory-list">
+                <li class="theory-list-item">слабые (lernen, leben, ,machen...)</li>
+                <li class="theory-list-item">сильные (fahren, geben)</li>
+                <li class="theory-list-item">неправильные (?)</li>
+            </ul>
+            <p class="theory-text">К неправильным относятся следующие глаголы:</p>
+            <ul class="theory-list">
+                <li class="theory-list-item">
+                    sein (war, gewesen), werden (wurde, geworden), haben (hatte, gehabt), tun (tat, getan),
+                    gehen (ging, gegangen), stehen (stand, gestanden), wissen (wusste, gewusst)
+                </li>
+                <li class="theory-list-item">модальные глаголы (können, dürfen, müssen, sollen, wollen, mögen)</li>
+            </ul>
+        </section>
+        <section id="section-2">
+            <h2 class="theory-title">Слабые глаголы</h2>
+            <p class="theory-text">
+                Претерит слабых глаголов образуется добавлением к основе глагола суффикса -(e)te.
+                Партицип II слабых глаголов образуется добавлением к основе глагола приставки ge- и суффикса -(e)t.
+                Корневая гласная не изменяется.
+            </p>
+            <table class="theory-table">
+                <tr>
+                    <th></th>
+                    <th>a</th>
+                    <th></th>
+                    <th>b</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>Infinitiv</td>
+                    <td>mach-en</td>
+                    <td>antwort-en</td>
+                    <td>besuch-en</td>
+                    <td>studier-en</td>
+                    <td>abhol-en</td>
+                </tr>
+                <tr>
+                    <td>Präteritum</td>
+                    <td>mach-te</td>
+                    <td>antwort-ete</td>
+                    <td>besuch-te</td>
+                    <td>studier-te</td>
+                    <td>hol-te ab</td>
+                </tr>
+                <tr>
+                    <td>Partizip II</td>
+                    <td>ge-mach-t</td>
+                    <td>ge-antwort-et</td>
+                    <td>besuch-t</td>
+                    <td>studier-t</td>
+                    <td>ab-ge-hol-t</td>
+                </tr>
+            </table>
+            <p class="theory-text">
+                У слабых и сильных глаголов с неотделяемой приставкой (например, besuchen) и у слабых
+                глаголов с суффиксом -ieren (напр., studieren) приставка ge- в партиципе II отсутствует.
+                В глаголах с отделяемой приставкой приставка ge- вставляется между отделяемой приставкой и корнем.
+                В претерите отделяемая приставка отделяется.
+            </p>
+        </section>
+        <section id="section-3">
+            <h2 class="theory-title">Сильные глаголы</h2>
+            <p class="theory-text">
+                Претерит и партицип II сильных глаголов образуются посредством чередования корневого гласного.
+                По этому признаку сильные глаголы можно разделить на несколько групп,
+                так называемых рядов изменения корневого гласного" - Ablautreihen
+            </p>
+            <p class="theory-text">
+                В претерите сильных глаголов суффикс отсутствует.
+                Партицип II образуется добавлением к основе глагола (с измененным корневым гласным)
+                приставки ge- и суффикса -en.
+            </p>
+        </section>
+    </div>
 </main>
 <footer class="main-footer">
     <div class="container footer-container">
