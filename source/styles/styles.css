@@ -229,6 +229,20 @@ main { flex-grow: 1; }
 
 .title-description { margin: 0; }
 
+/* Theory navigation */
+.theory-navigation-list {
+    position: fixed;
+    right: 100px;
+    top: 200px;
+    background-color: rgba(235, 138, 125, 0.8);
+    color: #FFFFFF;
+    border-radius: 10px;
+    width: 250px;
+    padding: 30px;
+}
+
+.theory-navigation-item { margin-bottom: 10px; }
+
 /* Footer */
 .main-footer {
     background: #4B00BF;
